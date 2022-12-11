@@ -34,9 +34,13 @@ class SignupRequest extends FormRequest
                 'min:6',
                 'confirmed'
             ],
-            'name' => [
+            'first_name' => [
                 'required',
-                'min:5'
+                'min:2'
+            ],
+            'last_name' => [
+                'required',
+                'min:2'
             ],
         ];
     }

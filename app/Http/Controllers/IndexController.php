@@ -16,14 +16,4 @@ class IndexController extends Controller
             'version' => 'alpha'
         ]);
     }
-
-    /**
-     * @return JsonResponse
-     */
-    public function greetings(): JsonResponse
-    {
-        return response()->json([
-            'message' => 'Welcome to shopping List API authenticated area'
-        ]);
-    }
 }

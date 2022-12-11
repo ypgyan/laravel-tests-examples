@@ -15,7 +15,8 @@ class AuthService
     public function register(array $data): User
     {
         return User::create([
-            'name' => $data['name'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
@@ -33,6 +34,8 @@ class AuthService
             $user->tokens()->delete();
             return [
                 'id' => $user->id,
+                'name' => "{$user->first_name} {$user->last_name}",
+                'email' => $user->email,
                 'token' => $user->createToken(time())->plainTextToken
             ];
         }

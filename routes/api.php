@@ -22,5 +22,5 @@ Route::post('signin', [AuthController::class, 'signin']);
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('signout', [AuthController::class, 'signout']);
-    Route::get('welcome', [IndexController::class, 'greetings']);
+    Route::get('/', [IndexController::class, 'index']);
 });
