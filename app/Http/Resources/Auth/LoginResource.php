@@ -21,7 +21,7 @@ class LoginResource extends JsonResource
             'email' => $this->email,
             'created_at' => $this->created_at->format('H:s:i d-m-Y'),
             'updated_at' => $this->updated_at->format('H:s:i d-m-Y'),
-            'token' => $this->whenNotNull($this->token),
+            'token' => $this->createToken(time())->token->id,
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Services\Auth;
 
+use App\Http\Resources\Auth\LoginResource;
 use App\Models\User;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Facades\Hash;
@@ -24,20 +25,15 @@ class AuthService
 
     /**
      * @param array $data
-     * @return array
+     * @return LoginResource
      * @throws AuthenticationException
      */
-    public function login(array $data): array
+    public function login(array $data): LoginResource
     {
         $user = User::where('email', $data['email'])->first();
         if (Hash::check($data['password'], $user->password)) {
             $user->tokens()->delete();
-            return [
-                'id' => $user->id,
-                'name' => "{$user->first_name} {$user->last_name}",
-                'email' => $user->email,
-                'token' => $user->createToken(time())->plainTextToken
-            ];
+            return new LoginResource($user);
         }
         throw new AuthenticationException('Authentication failed');
     }
