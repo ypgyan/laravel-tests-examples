@@ -27,7 +27,7 @@ class AuthController extends Controller
     public function signup(SignupRequest $request): JsonResponse
     {
         $user = $this->authService->register($request->validated());
-        return response()->json(new LoginResource($user));
+        return response()->json(new LoginResource($user), 201);
     }
 
     /**
