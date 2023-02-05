@@ -9,12 +9,12 @@ return [
     /*
      * The HTML <title> for the generated documentation. If this is empty, Scribe will infer it from config('app.name').
      */
-    'title' => null,
+    'title' => 'Movie Project',
 
     /*
-     * A short description of your API. Will be included in the docs webpage, Postman collection and OpenAPI spec.
+     * A short description of your API. Will be included in the doc's webpage, Postman collection and OpenAPI spec.
      */
-    'description' => '',
+    'description' => 'Project with the main goal of writing tests',
 
     /*
      * The base URL displayed in the docs. If this is empty, Scribe will use the value of config('app.url').
@@ -138,7 +138,7 @@ return [
      * - "static" will generate a static HTMl page in the /public/docs folder,
      * - "laravel" will generate the documentation as a Blade view, so you can add routing and authentication.
      */
-    'type' => 'static',
+    'type' => 'laravel',
 
     /*
      * Settings for `static` type output.
