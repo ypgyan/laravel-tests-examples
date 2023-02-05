@@ -102,6 +102,7 @@
     <div class="dark-box"></div>
     <div class="content">
         <h1 id="introduction">Introduction</h1>
+<p>Project with the main goal of writing tests</p>
 <aside>
     <strong>Base URL</strong>: <code>http://localhost</code>
 </aside>
@@ -133,10 +134,10 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"denesik.damion@example.com\",
-    \"password\": \"8SywxiJVy11_L\",
-    \"first_name\": \"bodiaahmvoksvwsivtdnhxzscbzhoqiyu\",
-    \"last_name\": \"vvu\"
+    \"email\": \"marilie43@example.com\",
+    \"password\": \"sOI#?T%xPWG.\'\\\"6s\",
+    \"first_name\": \"dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu\",
+    \"last_name\": \"fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf\"
 }"
 </code></pre></div>
 
@@ -152,10 +153,10 @@ const headers = {
 };
 
 let body = {
-    "email": "denesik.damion@example.com",
-    "password": "8SywxiJVy11_L",
-    "first_name": "bodiaahmvoksvwsivtdnhxzscbzhoqiyu",
-    "last_name": "vvu"
+    "email": "marilie43@example.com",
+    "password": "sOI#?T%xPWG.'\"6s",
+    "first_name": "dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu",
+    "last_name": "fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf"
 };
 
 fetch(url, {
@@ -236,10 +237,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-signup"
-               value="denesik.damion@example.com"
+               value="marilie43@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>denesik.damion@example.com</code></p>
+<p>Must be a valid email address. Example: <code>marilie43@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -247,10 +248,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-v1-signup"
-               value="8SywxiJVy11_L"
+               value="sOI#?T%xPWG.'"6s"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>8SywxiJVy11_L</code></p>
+<p>Must be at least 6 characters. Example: <code>sOI#?T%xPWG.'"6s</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name</code></b>&nbsp;&nbsp;
@@ -258,10 +259,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="first_name"                data-endpoint="POSTapi-v1-signup"
-               value="bodiaahmvoksvwsivtdnhxzscbzhoqiyu"
+               value="dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Example: <code>bodiaahmvoksvwsivtdnhxzscbzhoqiyu</code></p>
+<p>Must be at least 2 characters. Example: <code>dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name</code></b>&nbsp;&nbsp;
@@ -269,10 +270,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="last_name"                data-endpoint="POSTapi-v1-signup"
-               value="vvu"
+               value="fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Example: <code>vvu</code></p>
+<p>Must be at least 2 characters. Example: <code>fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf</code></p>
         </div>
         </form>
 
@@ -293,8 +294,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"ipsam\",
-    \"password\": \"doloribus\"
+    \"email\": \"tenetur\",
+    \"password\": \"perferendis\"
 }"
 </code></pre></div>
 
@@ -310,8 +311,8 @@ const headers = {
 };
 
 let body = {
-    "email": "ipsam",
-    "password": "doloribus"
+    "email": "tenetur",
+    "password": "perferendis"
 };
 
 fetch(url, {
@@ -392,10 +393,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-v1-signin"
-               value="ipsam"
+               value="tenetur"
                data-component="body">
     <br>
-<p>Example: <code>ipsam</code></p>
+<p>Example: <code>tenetur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -403,10 +404,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-v1-signin"
-               value="doloribus"
+               value="perferendis"
                data-component="body">
     <br>
-<p>Example: <code>doloribus</code></p>
+<p>Example: <code>perferendis</code></p>
         </div>
         </form>
 

@@ -12,9 +12,9 @@ return [
     'title' => 'Movie Project',
 
     /*
-     * A short description of your API. Will be included in the docs webpage, Postman collection and OpenAPI spec.
+     * A short description of your API. Will be included in the doc's webpage, Postman collection and OpenAPI spec.
      */
-    'description' => '',
+    'description' => 'Project with the main goal of writing tests',
 
     /*
      * The base URL displayed in the docs. If this is empty, Scribe will use the value of config('app.url').

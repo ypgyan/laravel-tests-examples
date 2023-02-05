@@ -26,35 +26,35 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: denesik.damion@example.com
+        example: marilie43@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: 8SywxiJVy11_L
+        example: 'sOI#?T%xPWG.''"6s'
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must be at least 2 characters.'
         required: true
-        example: bodiaahmvoksvwsivtdnhxzscbzhoqiyu
+        example: dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must be at least 2 characters.'
         required: true
-        example: vvu
+        example: fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf
         type: string
         custom: []
     cleanBodyParameters:
-      email: denesik.damion@example.com
-      password: 8SywxiJVy11_L
-      first_name: bodiaahmvoksvwsivtdnhxzscbzhoqiyu
-      last_name: vvu
+      email: marilie43@example.com
+      password: 'sOI#?T%xPWG.''"6s'
+      first_name: dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu
+      last_name: fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf
     fileParameters: []
     responses: []
     responseFields: []
@@ -88,19 +88,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: ipsam
+        example: tenetur
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: doloribus
+        example: perferendis
         type: string
         custom: []
     cleanBodyParameters:
-      email: ipsam
-      password: doloribus
+      email: tenetur
+      password: perferendis
     fileParameters: []
     responses: []
     responseFields: []

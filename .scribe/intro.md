@@ -1,6 +1,6 @@
 # Introduction
 
-
+Project with the main goal of writing tests
 
 <aside>
     <strong>Base URL</strong>: <code>http://localhost</code>
