@@ -26,35 +26,35 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: marilie43@example.com
+        example: farrell.greyson@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: 'sOI#?T%xPWG.''"6s'
+        example: ":mkS}fXtx'>"
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must be at least 2 characters.'
         required: true
-        example: dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu
+        example: kxdjhuomwzhgdv
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must be at least 2 characters.'
         required: true
-        example: fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf
+        example: vqaofsprsygfjvyelrvoabefvlbidfiemqumjyagrkdhcedscfnclirzqvolweqamjnjzvdkqzdv
         type: string
         custom: []
     cleanBodyParameters:
-      email: marilie43@example.com
-      password: 'sOI#?T%xPWG.''"6s'
-      first_name: dgxwawpbllnavlcrodmttyakzwaowwqcndkmuwlezwmphejhfbsnsssxbzroblu
-      last_name: fwuvtsqnazvirigutmfeldzsjmrkjmrzlzpooissstnaxfkpzxf
+      email: farrell.greyson@example.org
+      password: ":mkS}fXtx'>"
+      first_name: kxdjhuomwzhgdv
+      last_name: vqaofsprsygfjvyelrvoabefvlbidfiemqumjyagrkdhcedscfnclirzqvolweqamjnjzvdkqzdv
     fileParameters: []
     responses: []
     responseFields: []
@@ -88,19 +88,19 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: tenetur
+        example: ut
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: perferendis
+        example: dolore
         type: string
         custom: []
     cleanBodyParameters:
-      email: tenetur
-      password: perferendis
+      email: ut
+      password: dolore
     fileParameters: []
     responses: []
     responseFields: []
