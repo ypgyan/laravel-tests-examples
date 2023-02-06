@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       pgsql:
-        image: 'postgres:13'
+        image: 'postgres:10.8'
         ports:
           - '5432:5432'
         env:
@@ -36,7 +36,4 @@ jobs:
     - name: Run Migrations
       run: php artisan migrate
     - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
