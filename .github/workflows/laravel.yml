@@ -10,6 +10,24 @@ jobs:
   laravel-tests:
 
     runs-on: ubuntu-latest
+    services:
+      pgsql:
+        image: 'postgres:13'
+        ports:
+          - '${FORWARD_DB_PORT:-5432}:5432'
+        environment:
+          PGPASSWORD: '${DB_PASSWORD:-secret}'
+          POSTGRES_DB: '${DB_DATABASE}'
+          POSTGRES_USER: '${DB_USERNAME}'
+          POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
+        volumes:
+          - 'sail-pgsql:/var/lib/postgresql/data'
+        networks:
+          - sail
+        healthcheck:
+          test: [ "CMD", "pg_isready", "-q", "-d", "${DB_DATABASE}", "-U", "${DB_USERNAME}" ]
+          retries: 3
+          timeout: 5s
 
     steps:
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
@@ -24,10 +42,6 @@ jobs:
       run: php artisan key:generate
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
-    - name: Create Database
-      run: |
-        mkdir -p database
-        touch database/database.sqlite
     - name: Run Migrations
       run: php artisan migrate
     - name: Execute tests (Unit and Feature tests) via PHPUnit
