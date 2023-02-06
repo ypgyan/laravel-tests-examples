@@ -14,12 +14,11 @@ jobs:
       pgsql:
         image: 'postgres:13'
         ports:
-          - '${FORWARD_DB_PORT:-5432}:5432'
+          - '5432:5432'
         env:
-          PGPASSWORD: '${DB_PASSWORD:-secret}'
-          POSTGRES_DB: '${DB_DATABASE}'
-          POSTGRES_USER: '${DB_USERNAME}'
-          POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
+          POSTGRES_DB: 'movie_api'
+          POSTGRES_USER: 'root'
+          POSTGRES_PASSWORD: 'root'
 
     steps:
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
