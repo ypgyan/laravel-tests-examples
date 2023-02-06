@@ -20,10 +20,6 @@ jobs:
           POSTGRES_DB: '${DB_DATABASE}'
           POSTGRES_USER: '${DB_USERNAME}'
           POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
-        healthcheck:
-          test: [ "CMD", "pg_isready", "-q", "-d", "${DB_DATABASE}", "-U", "${DB_USERNAME}" ]
-          retries: 3
-          timeout: 5s
 
     steps:
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
