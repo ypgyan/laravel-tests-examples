@@ -30,9 +30,9 @@ jobs:
         run: |
           cp .env.ci .env
           php artisan key:generate
+          php artisan migrate
           php artisan passport:install
           php artisan passport:keys
-          php artisan migrate
 
       - name: Run Testsuite
         run: vendor/bin/phpunit tests/
