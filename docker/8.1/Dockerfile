@@ -68,5 +68,6 @@ COPY php.ini /etc/php/8.1/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
 
 EXPOSE 8000
+EXPOSE 8001
 
 ENTRYPOINT ["start-container"]
